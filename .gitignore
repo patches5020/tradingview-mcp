@@ -5,12 +5,3 @@ temp_*
 *.log
 discovery-log.json
 rules.json
-
-# Personal runtime state, not source -- see conversation for why these were
-# added instead of committed as-is: %h/ is a stray artifact (a literal "%h"
-# directory, almost certainly an unexpanded shell/tool format-string bug),
-# cdcx_trades.json is live CDCX paper-trade state, and trading/ is personal
-# paper-trading run output (signals/rejected/simulated orders and results).
-%h/
-cdcx_trades.json
-trading/
